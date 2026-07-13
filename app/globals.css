@@ -50,6 +50,7 @@
   from {
     transform: translateX(0);
   }
+
   to {
     transform: translateX(-50%);
   }
@@ -59,17 +60,20 @@
   from {
     background-position: 0% 50%;
   }
+
   to {
     background-position: 200% 50%;
   }
 }
 
 @keyframes beaconPulse {
+
   0%,
   100% {
     opacity: 0.4;
     transform: scale(0.8);
   }
+
   50% {
     opacity: 1;
     transform: scale(1.15);
@@ -80,6 +84,7 @@
   from {
     transform: translateX(-120%) skewX(-12deg);
   }
+
   to {
     transform: translateX(320%) skewX(-12deg);
   }
@@ -90,6 +95,7 @@ html {
 }
 
 body {
+  overflow-x: hidden;
   background: var(--color-parchment);
   color: var(--color-charcoal);
   font-family: var(--font-sans), ui-sans-serif, system-ui, sans-serif;
@@ -115,6 +121,7 @@ body {
 
 /* Reduced motion: strip decorative motion, keep content instantly usable */
 @media (prefers-reduced-motion: reduce) {
+
   *,
   *::before,
   *::after {
